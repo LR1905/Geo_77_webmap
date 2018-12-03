@@ -13,11 +13,13 @@ crossorigin=""></script>
 </head>
 <body>
 
-<h1>Überschrift</h1>
-<p>texttexttext.</p>
+<h1>Tolle Karte</h1>
+<p>Das ist eine Karte.</p>
 <div id="mapid" style="width: 600px; height: 400px; position: relative;"></div>
 <script>
 var mymap = L.map('mapid').setView([0,0]).setZoom(1);
+var OSM_background = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap);
+
 </script>
 
 </body>
